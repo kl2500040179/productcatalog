@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product catalog</title>
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            
+        }
+
+        header {
+            background-color: #333366;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        section {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color:white;
+        }
+
+        .product {
+            background-color: white;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: #333366;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1> Product Catalog</h1>
+        <p>product catalog  online shopping</p>
+    </header>
+
+    <section>
+        <h2>Our Products</h2>
+
+        <div class="product">
+            <h3>Laptop</h3>
+            <p>Price: ₹50,000</p>
+            <button onclick="buy('Laptop')">Buy Now</button>
+        </div>
+
+        <div class="product">
+            <h3>Mobile</h3>
+            <p>Price: ₹20,000</p>
+            <button onclick="buy('Mobile')">Buy Now</button>
+        </div>
+
+        <div class="product">
+            <h3>Headphones</h3>
+            <p>Price: ₹1,500</p>
+            <button onclick="buy('Headphones')">Buy Now</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Online Shopping</p>
+    </footer>
+
+    <script>
+        function buy(product) {
+            alert(product + " selected successfully!");
+        }
+    </script>
+
+</body>
+</html>
